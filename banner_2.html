@@ -1,0 +1,183 @@
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Web Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700%7COpen+Sans:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- Components Vendor Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
+
+    <!-- Theme Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
+<body>
+
+
+
+  <nav class="js-navbar-scroll navbar fixed-top navbar-expand-lg navbar-transparent navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              Home
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarTogglerDemo"
+
+                    aria-controls="navbarTogglerDemo"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item mr-4 mb-2 mb-lg-0">
+                  <a href="#js-scroll-to-section" class="nav-link" href="#!">
+                    <i class="fas fa-cubes u-font-size-90 mr-1"></i> Create +
+                  </a>
+                </li>
+                <li class="nav-item mr-4 mb-2 mb-lg-0">
+
+                    
+                    <div class="btn-group">
+
+                      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cube u-font-size-90 mr-1"></i> 
+                        Log In
+                      </button>
+
+
+                      <div class="dropdown-menu">
+
+                        <a class="dropdown-item" href="#">Sign In</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sign Up</a>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                
+              </ul>
+
+            </div>
+          </div>
+  </nav>
+
+
+
+<div class="banner_2">
+
+
+        <!-- Promo Content -->
+        <div class="container u-overlay__inner u-ver-center u-content-space text-white" style="margin-top:-150px;">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="text-center">
+
+                <h1 class="display-sm-4 display-lg-3 mb-3">About Us</h1>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Promo Content -->
+</div>
+  
+
+</body>
+
+
+
+    <!-- JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
+    <!-- Global Vendor -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/vendors/jquery.migrate.min.js"></script>
+    <script src="assets/vendors/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Components Vendor  -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery.parallax.js"></script>
+
+    <!-- Theme Settings and Calls -->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Theme Components and Settings -->
+    <script src="assets/js/vendors/parallax.js"></script>
+    <!-- END JAVASCRIPTS -->
+
+
+
+
+    <!-- Demo Code Only -->
+    <script>
+      // Font Toggle
+      $(document).on('ready', function () {
+        $('.js-font-change-btn').click(function() {
+          $('.js-font-change-btn__icon').toggleClass('fa-toggle-on');
+          $('.js-font-content').toggleClass('u-font-accent');
+          $('.js-font-content__chnage1').toggleClass('d-none');
+          $('.js-font-content__chnage2').toggleClass('d-inline-block');
+        });
+      });
+      // End Font Toggle
+
+      // Facebook Like
+      window.fbAsyncInit = function () {
+        // init the FB JS SDK
+        FB.init({
+          appId: '1972702999621713',
+          status: true,
+          xfbml: true,
+          version: 'v2.3'
+        });
+        if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackFacebook();
+        setTimeout(function () {
+          if (typeof window.fbCallback == 'function') {
+            window.fbCallback();
+          }
+        }, 3000); // to make sure FB was loaded
+      };
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      // Facebook Like
+
+      // Twitter Follow
+      window.twttr = (function (d, s, id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = {
+          _e: [], ready: function (f) {
+            t._e.push(f)
+          }
+        });
+      }(document, "script", "twitter-wjs"));
+      twttr.ready(function (twttr) {
+        twttr.events.bind('tweet', function (event) {
+          if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackTwitter();
+        });
+      });
+      // Twitter Follow
+    </script>
+    <!-- End Demo Code Only -->
+
+    <!-- Github and Google Plus Buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- End Github and Google Plus Buttons -->

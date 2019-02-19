@@ -1,0 +1,179 @@
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Web Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,700%7COpen+Sans:300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <!-- Components Vendor Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/font-awesome/css/fontawesome-all.min.css">
+
+    <!-- Theme Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
+<div class="flex_box_even">
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+
+		<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+
+	<div class="card" style="width: 18rem;">
+	  <img class="card-img-top" src="assets/img/home.jpg" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">Event title</h5>
+	    <p class="card-text">Description Event. What a beautiful event, blablablabla blablablabla</p>
+	    <a href="#" class="btn btn-primary">See more</a>
+	  </div>
+	</div>
+</div>
+
+
+     <!-- JAVASCRIPTS (Load javascripts at bottom, this will reduce page load time) -->
+    <!-- Global Vendor -->
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/vendors/jquery.migrate.min.js"></script>
+    <script src="assets/vendors/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Components Vendor  -->
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/jquery.parallax.js"></script>
+
+    <!-- Theme Settings and Calls -->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Theme Components and Settings -->
+    <script src="assets/js/vendors/parallax.js"></script>
+    <!-- END JAVASCRIPTS -->
+
+    <!-- Demo Code Only -->
+    <script>
+      // Font Toggle
+      $(document).on('ready', function () {
+        $('.js-font-change-btn').click(function() {
+          $('.js-font-change-btn__icon').toggleClass('fa-toggle-on');
+          $('.js-font-content').toggleClass('u-font-accent');
+          $('.js-font-content__chnage1').toggleClass('d-none');
+          $('.js-font-content__chnage2').toggleClass('d-inline-block');
+        });
+      });
+      // End Font Toggle
+
+      // Facebook Like
+      window.fbAsyncInit = function () {
+        // init the FB JS SDK
+        FB.init({
+          appId: '1972702999621713',
+          status: true,
+          xfbml: true,
+          version: 'v2.3'
+        });
+        if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackFacebook();
+        setTimeout(function () {
+          if (typeof window.fbCallback == 'function') {
+            window.fbCallback();
+          }
+        }, 3000); // to make sure FB was loaded
+      };
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      // Facebook Like
+
+      // Twitter Follow
+      window.twttr = (function (d, s, id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = {
+          _e: [], ready: function (f) {
+            t._e.push(f)
+          }
+        });
+      }(document, "script", "twitter-wjs"));
+      twttr.ready(function (twttr) {
+        twttr.events.bind('tweet', function (event) {
+          if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackTwitter();
+        });
+      });
+      // Twitter Follow
+    </script>
+    <!-- End Demo Code Only -->
+
+    <!-- Github and Google Plus Buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- End Github and Google Plus Buttons -->
+  </body>
+  <!-- End Body -->
+</html>
